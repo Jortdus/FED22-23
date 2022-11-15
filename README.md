@@ -28,10 +28,12 @@
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Archimedes hoofdpagina
+  <br>
   <img src="readme-images/archimedes.png" width="375px" alt="Archimedes hoofdpagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Praktijk pagina Broekhof 
+  Praktijk pagina Broekhof
+  <br> 
   <img src="readme-images/praktijk-broekhof.png" width="375px" alt="Praktijk Broekhof pagina">
  
 </details>
