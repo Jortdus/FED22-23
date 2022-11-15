@@ -1,7 +1,7 @@
 # Procesverslag
 
 
-## Jij
+## Jort Broekhof
 
 <details>
 
@@ -17,7 +17,7 @@
 </details>
 
 
-## Je website
+## De website
 
 <details>
 
