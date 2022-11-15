@@ -27,11 +27,11 @@
   [Archimedes medisch centrum praktijk informatie Broekhof](https://archimedes-mc.nl/huisartsen/broekhof/praktijk-informatie/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Archimedes hoofdpagina
   <img src="readme-images/archimedes.png" width="375px" alt="Archimedes hoofdpagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Praktijk pagina Broekhof 
   <img src="readme-images/praktijk-broekhof.png" width="375px" alt="Praktijk Broekhof pagina">
  
 </details>
