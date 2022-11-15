@@ -22,7 +22,7 @@
 <details>
 
   ### Je opdracht:
-  Ik ga beide pagina's verbeteren, semantisch, responsive en toegankelijk maken. Deze complete website is ook een echte opdracht waar ik op dit moment mee bezig ben voor Archimedes. 
+  Ik ga beide pagina's verbeteren, semantisch, responsive en toegankelijk maken. Deze complete website is ook een echte opdracht waar ik op dit moment mee bezig ben voor Archimedes. <br>
   [Archimedes medisch centrum hoofdpagina](https://archimedes-mc.nl/) <br>
   [Archimedes medisch centrum praktijk informatie Broekhof](https://archimedes-mc.nl/huisartsen/broekhof/praktijk-informatie/)
 
