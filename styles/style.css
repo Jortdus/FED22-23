@@ -1,39 +1,77 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: var(--font-family);
 }
-
-button, summary {
-	cursor: pointer;
-}
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    --font-family: "Lexend", sans-serif;
+    --color-text: #111;
+    --color-main: #80c1c9;
 }
 
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+html {
+    width: 100vw;
+    height: 100vh;
+}
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+    height: 100%;
+    width: 100%;
+    padding: 5% 10%;
+    color: var(--color-text);
+    margin: 0 auto;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* .nav-container {
+    background-color: var(--color-main);
+} */
+
+/* Small screens */
+@media (max-width: 375px) {
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .list-container li {
+        margin: 0.5% 0 0.5% 0;
+        padding: 10%;
+        font-size: 1.8em;
+        background-color: var(--color-main);
+    }
+}
+
+/* Big screens */
+@media (min-width: 376px) {
+    .list-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .list-container li {
+        margin: 0.5% 0 0.5% 0;
+        padding: 2.5% 5% 2.5% 5%;
+        font-size: 1.8em;
+        background-color: var(--color-main);
+    }
+}
