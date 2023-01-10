@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" data-color-mode>
     <head>
         <meta charset="UTF-8" />
         <meta name="author" content="Jort Broekhof" />
@@ -17,22 +17,127 @@
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     </head>
     <header>
-        <h1>Archimedes</h1>
+        <img
+            src="/images/archimedes-logo.svg"
+            alt="Logo Archimedes"
+            id="archimedesLogo"
+        />
+        <ul id="switchContainer">
+            <li>
+                <button onclick="lightCheck()">
+                    <label for="lightMode">Lichte mode</label>
+                </button>
+            </li>
+            <li>
+                <button onclick="darkCheck()">
+                    <label for="darkMode">Donkere mode</label>
+                </button>
+            </li>
+            <li>
+                <button onclick="contrastCheck()">
+                    <label for="contrastMode">Hoog contrast</label>
+                </button>
+            </li>
+        </ul>
     </header>
     <nav class="nav-container">
-        <ul class="list-container">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Huisartsen</a></li>
-            <li><a href="/">Apotheek</a></li>
-            <li><a href="/">Overige zorg</a></li>
-        </ul>
+        <a id="current" href="/">Home</a>
+        <a href="huisartsen.html">Huisartsen</a>
+        <a href="/">Apotheek</a>
+        <a href="/">Overige zorg</a>
     </nav>
     <main>
-        <section></section>
+        <section>
+            <h1>Welkom bij Archimedes medisch centrum</h1>
+            <section class="main-content">
+                <h3>
+                    Corona virus / COVID-19 – informatie voor bezoekers van het
+                    Archimedes Medisch Centrum
+                </h3>
+                <p>
+                    In het Archimedes Medisch Centrum vindt u diverse
+                    disciplines met betrekking tot zorgverlening onder één dak.
+                    Dit zijn onder andere drie huisartspraktijken, een apotheek,
+                    fysiotherapeuten, diëtisten, psychologen, een osteopaat en
+                    een prikpost. Door de krachten op één locatie te bundelen,
+                    kan persoonlijke zorg op hoog niveau worden aangeboden.
+                </p>
+
+                <h2>Patiënten met luchtwegklachten en koorts</h2>
+
+                <p>
+                    Voor uw en onze veiligheid willen wij de kans op
+                    verspreiding van het coronavirus/COVID-19 beperken. Binnen
+                    het Archimedes Medisch Centrum worden diverse maatregelen
+                    getroffen die gericht zijn op het beperken van fysieke
+                    contacten. De huisartspraktijken in het Archimedes Medisch
+                    Centrum zijn uitsluitend geopend voor bezoekers met een
+                    afspraak. Meer informatie over specifieke maatregelen van uw
+                    huisartsenpraktijk vindt u op Huisartsenpraktijk Kerssen &
+                    van der Wal of op Huisartsenpraktijk Broekhof.
+                </p>
+                <h3>Overige vragen</h3>
+                <p>
+                    Alle actuele informatie over het coronavirus vindt u op
+                    www.thuisarts.nl. U kunt ook bellen naar het landelijke
+                    informatienummer: 0800-1351 Wij rekenen op uw begrip voor
+                    deze maatregelen.
+                </p>
+            </section>
+        </section>
+        <section>
+            <ul class="cardContainer">
+                <li>
+                    <h3>Wilt u zich inschrijven als nieuwe patiënt?</h3>
+                    <p>
+                        Wilt u zich inschrijven bij één van de drie
+                        huisartspraktijken die gehuisvest zijn in het Archimedes
+                        Medisch Centrum.
+                    </p>
+                </li>
+                <li>
+                    <h3>Wat is Archimedes Medisch Centrum?</h3>
+                    <p>
+                        Bij Archimedes Medisch Centrum vindt u diverse
+                        disciplines met betrekking tot zorgverlening bij elkaar
+                        onder één dak.
+                    </p>
+                </li>
+                <li>
+                    <h3>Zoekt u onze contact gegevens of de route?</h3>
+                    <p>
+                        Het Archimedes MC is gevestigd aan de langste laan van
+                        Europa in het voormalig politiebureau op de hoek van de
+                        Archimedesstraat in Den Haag.
+                    </p>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <body>
-        <footer></footer>
+        <footer>
+            <h2>Wilt u meer weten?</h2>
+            <ul class="footerList">
+                <li>
+                    <h3>
+                        Bel <a href="tel:112">112</a> bij levensbedreigende
+                        situaties
+                    </h3>
+                </li>
+                <li>
+                    <a href="/">Onze telefoonnummers</a>
+                </li>
+                <li>
+                    <a href="/">Onze e-mail adressen</a>
+                </li>
+                <li>
+                    <p>
+                        Ons Adres: Laan van Meerdervoort 211-L, 2563 AA Den Haag
+                    </p>
+                </li>
+            </ul>
+        </footer>
         <script defer src="scripts/script.js"></script>
     </body>
 </html>

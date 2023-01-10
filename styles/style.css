@@ -1,11 +1,10 @@
-/**************/
-/* CSS REMEDY */
-/**************/
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
 }
 
 /*********************/
@@ -15,6 +14,43 @@
     --font-family: "Lexend", sans-serif;
     --color-text: #111;
     --color-main: #80c1c9;
+    --color-a: #fff;
+    --color-cardbg: #80c1c9;
+    --color-navbutton: #80c1c9;
+    --color-navtext: #fff;
+    --color-background: #fff;
+    --color-currentnav: #80c1c9;
+    --color-currentnavtext: #80c1c9;
+}
+
+:root[data-color-mode="dark-mode"] {
+    --font-family: "Lexend", sans-serif;
+    --color-text: #fff;
+    --color-background: #1d2a35;
+    --color-cardbg: #1d575e;
+    --color-navbutton: #1d575e;
+    --color-currentnav: #1d575e;
+    --color-currentnavtext: #fff;
+}
+
+:root[data-color-mode="contrast-mode"] {
+    --color-background: #000000;
+    --color-navbutton: #1d575e;
+    --color-currentnav: #fff;
+    --color-cardbg: #1d575e;
+    --color-text: #fff;
+    --color-currentnavtext: #fff;
+}
+
+.aria-invisible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 html {
@@ -23,11 +59,13 @@ html {
 }
 
 body {
+    background-color: var(--color-background);
     height: 100%;
     width: 100%;
     padding: 5% 10%;
     color: var(--color-text);
     margin: 0 auto;
+    letter-spacing: 1px;
 }
 
 li {
@@ -36,48 +74,193 @@ li {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-a);
 }
 
-/* .nav-container {
-    background-color: var(--color-main);
+footer a {
+    color: var(--color-text);
+}
+
+.main-content {
+    max-width: 95%;
+}
+
+.main-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0 30px 0;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    margin: 10px 0 30px 0;
+}
+
+#current {
+    background-color: var(--color-background);
+    border: 3px solid var(--color-currentnav);
+    color: var(--color-currentnavtext);
+}
+
+/* #switchContainer {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    justify-content: space-between;
+    width: 30%;
 } */
 
 /* Small screens */
 @media (max-width: 375px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    main {
+        margin-top: 10%;
+    }
+
     .list-container {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
 
-    .list-container li {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-container a {
+        font-size: 1.6em;
+        background-color: var(--color-navbutton);
+        color: var(--color-navtext);
+        padding: 5%;
+        margin-bottom: 3%;
+        border-radius: 5px;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardContainer li {
+        /* width: 30%; */
+        max-height: 60%;
+        padding: 4%;
+        margin: 4% 0% 4% 0;
+        background-color: var(--color-cardbg);
+        color: var(--color-navtext);
+    }
+
+    .cardContainer li h3 {
+        margin: 2% 0 6% 0;
+    }
+
+    footer {
+        padding-bottom: 5%;
+    }
+
+    #switchContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 0.5% 0 0.5% 0;
-        padding: 10%;
-        font-size: 1.8em;
-        background-color: var(--color-main);
+        user-select: none;
+        justify-content: space-between;
+        margin-bottom: 10%;
+    }
+
+    #switchContainer li button {
+    background-color: white;
+    border: black solid 1px;
+}
+    }
+
+    #infoContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #infoContainer div {
+        width: 100%;
+    }
+    li button {
+        padding: 5px;
+        margin: 0 5px 0 5px;
     }
 }
 
 /* Big screens */
 @media (min-width: 376px) {
-    .list-container {
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #archimedesLogo {
+        max-width: 30%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .nav-container {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         padding: 0;
+        margin-top: 6%;
     }
 
-    .list-container li {
+    .nav-container a {
+        font-size: 1.8em;
+        background-color: var(--color-navbutton);
+        color: var(--color-navtext);
+        padding: 2% 5% 2% 5%;
+        border-radius: 5px;
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cardContainer li {
+        width: 30%;
+        max-height: 60%;
+        padding: 2%;
+        margin-bottom: 2%;
+        background-color: var(--color-cardbg);
+        color: var(--color-navtext);
+    }
+
+    section {
+        margin-top: 6%;
+    }
+
+    footer {
+        padding-bottom: 5%;
+    }
+    /* 
+    .footerList {
+    } */
+
+    .footerList li {
+        padding: 10px 10px 10px 0;
+    }
+
+    #switchContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 0.5% 0 0.5% 0;
-        padding: 2.5% 5% 2.5% 5%;
-        font-size: 1.8em;
-        background-color: var(--color-main);
+        user-select: none;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    li button {
+        padding: 10px;
+        margin: 0 5px 0 5px;
     }
 }
