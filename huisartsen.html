@@ -17,7 +17,28 @@
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     </head>
     <header>
-        <h1>Archimedes</h1>
+        <img
+            src="/images/archimedes-logo.svg"
+            alt="Logo Archimedes"
+            id="archimedesLogo"
+        />
+        <ul id="switchContainer">
+            <li>
+                <button onclick="lightCheck()">
+                    <label for="lightMode">Lichte mode</label>
+                </button>
+            </li>
+            <li>
+                <button onclick="darkCheck()">
+                    <label for="darkMode">Donkere mode</label>
+                </button>
+            </li>
+            <li>
+                <button onclick="contrastCheck()">
+                    <label for="contrastMode">Hoog contrast</label>
+                </button>
+            </li>
+        </ul>
     </header>
     <nav class="nav-container">
         <a href="/">Home</a>
@@ -25,12 +46,73 @@
         <a href="/">Apotheek</a>
         <a href="/">Overige zorg</a>
     </nav>
-    <main>
-        <section></section>
-    </main>
 
     <body>
-        <footer></footer>
+        <main>
+            <section>
+                <ul class="doctorContainer">
+                    <li>
+                        <a href="">
+                            <img
+                                src="/images/archimedes-noor.jpeg"
+                                alt="Huisartsenpraktijk Broekhof"
+                            />
+                            <article>
+                                <h2>Huisartsenpraktijk Broekhof</h2>
+                                <p>
+                                    "Luisteren, begrijpen, gehoor geven aan,
+                                    shared decision making - dat zijn de
+                                    kernbegrippen waar wij in onze praktijk voor
+                                    staan. Samen staan we sterk!" (L.J.
+                                    Broekhof)
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img
+                                src="/images//archimedes-kerssen.png"
+                                alt="Huisartsenpraktijk Broekhof"
+                            />
+                            <article>
+                                <h2>
+                                    Huisartsenpraktijk Kerssen & van der Wal
+                                </h2>
+                                <p>
+                                    "Kennis en ervaring delen om zo de patiënt
+                                    nóg betere zorg te kunnen bieden is een van
+                                    de mooie krachten van deze praktijk." (A.
+                                    Kerssen en L.C. van der Wal)
+                                </p>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <h2>Wilt u meer weten?</h2>
+            <ul class="footerList">
+                <li>
+                    <h3>
+                        Bel <a href="tel:112">112</a> bij levensbedreigende
+                        situaties
+                    </h3>
+                </li>
+                <li>
+                    <a href="/">Onze telefoonnummers</a>
+                </li>
+                <li>
+                    <a href="/">Onze e-mail adressen</a>
+                </li>
+                <li>
+                    <p>
+                        Ons Adres: Laan van Meerdervoort 211-L, 2563 AA Den Haag
+                    </p>
+                </li>
+            </ul>
+        </footer>
         <script defer src="scripts/script.js"></script>
     </body>
 </html>

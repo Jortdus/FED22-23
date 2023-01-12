@@ -21,6 +21,8 @@
     --color-background: #fff;
     --color-currentnav: #80c1c9;
     --color-currentnavtext: #80c1c9;
+    --button-radius: 5px;
+    --image-visibility: block;
 }
 
 :root[data-color-mode="dark-mode"] {
@@ -31,15 +33,22 @@
     --color-navbutton: #1d575e;
     --color-currentnav: #1d575e;
     --color-currentnavtext: #fff;
+    --button-radius: 5px;
+    --image-visibility: block;
 }
 
 :root[data-color-mode="contrast-mode"] {
     --color-background: #000000;
-    --color-navbutton: #1d575e;
-    --color-currentnav: #fff;
+    --color-navbutton: #fff;
+    --color-currentnav: #f3db05;
     --color-cardbg: #1d575e;
     --color-text: #fff;
+    --color-navtext: #000000;
     --color-currentnavtext: #fff;
+    --filter-white: brightness(0) invert(1);
+    --button-radius: 0;
+    --color-cardbg: #fff;
+    --image-visibility: none;
 }
 
 .aria-invisible {
@@ -68,6 +77,10 @@ body {
     letter-spacing: 1px;
 }
 
+header img {
+    filter: var(--filter-white);
+}
+
 li {
     list-style: none;
 }
@@ -86,12 +99,12 @@ footer a {
 }
 
 .main-content h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 10px 0 30px 0;
 }
 
 .main-content p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 10px 0 30px 0;
 }
 
@@ -100,14 +113,6 @@ footer a {
     border: 3px solid var(--color-currentnav);
     color: var(--color-currentnavtext);
 }
-
-/* #switchContainer {
-    display: flex;
-    align-items: center;
-    user-select: none;
-    justify-content: space-between;
-    width: 30%;
-} */
 
 /* Small screens */
 @media (max-width: 375px) {
@@ -132,12 +137,12 @@ footer a {
     }
 
     .nav-container a {
-        font-size: 1.6em;
+        font-size: 1.5em;
         background-color: var(--color-navbutton);
         color: var(--color-navtext);
-        padding: 5%;
+        padding: 4.5%;
         margin-bottom: 3%;
-        border-radius: 5px;
+        border-radius: var(--button-radius);
     }
 
     .cardContainer {
@@ -146,7 +151,6 @@ footer a {
     }
 
     .cardContainer li {
-        /* width: 30%; */
         max-height: 60%;
         padding: 4%;
         margin: 4% 0% 4% 0;
@@ -171,9 +175,8 @@ footer a {
     }
 
     #switchContainer li button {
-    background-color: white;
-    border: black solid 1px;
-}
+        background-color: white;
+        border: black solid 1px;
     }
 
     #infoContainer {
@@ -187,6 +190,38 @@ footer a {
     li button {
         padding: 5px;
         margin: 0 5px 0 5px;
+    }
+
+    .doctorContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .doctorContainer li {
+        width: 100%;
+        margin-bottom: 10%;
+        background-color: var(--color-cardbg);
+    }
+
+    .doctorContainer li article {
+        padding: 0 5% 5% 5%;
+        color: var(--color-navtext);
+    }
+
+    .doctorContainer li article h2 {
+        margin: 5% 0 0 0;
+    }
+
+    .doctorContainer li article p {
+        margin: 2.5% 0 5% 0;
+    }
+
+    .doctorContainer li img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        display: var(--image-visibility);
+        margin-bottom: 5%;
     }
 }
 
@@ -211,15 +246,15 @@ footer a {
         justify-content: space-between;
         flex-direction: row;
         padding: 0;
-        margin-top: 6%;
+        margin-top: 4%;
     }
 
     .nav-container a {
-        font-size: 1.8em;
+        font-size: 1.6em;
         background-color: var(--color-navbutton);
         color: var(--color-navtext);
-        padding: 2% 5% 2% 5%;
-        border-radius: 5px;
+        padding: 2% 4% 2% 4%;
+        border-radius: var(--button-radius);
     }
 
     .cardContainer {
@@ -236,6 +271,10 @@ footer a {
         color: var(--color-navtext);
     }
 
+    .cardContainer li h3 {
+        margin-bottom: 5%;
+    }
+
     section {
         margin-top: 6%;
     }
@@ -243,9 +282,6 @@ footer a {
     footer {
         padding-bottom: 5%;
     }
-    /* 
-    .footerList {
-    } */
 
     .footerList li {
         padding: 10px 10px 10px 0;
@@ -262,5 +298,43 @@ footer a {
     li button {
         padding: 10px;
         margin: 0 5px 0 5px;
+    }
+
+    .doctorContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .doctorContainer li {
+        width: 40%;
+        margin-bottom: 10%;
+        background-color: var(--color-cardbg);
+    }
+
+    .doctorContainer li img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .doctorContainer li article {
+        padding: 0 5% 5% 5%;
+        color: var(--color-navtext);
+    }
+
+    .doctorContainer li article h2 {
+        margin: 5% 0 0 0;
+    }
+
+    .doctorContainer li article p {
+        margin: 2.5% 0 5% 0;
+    }
+
+    .doctorContainer li img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        display: var(--image-visibility);
+        margin-bottom: 5%;
     }
 }
