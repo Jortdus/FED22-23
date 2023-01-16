@@ -94,16 +94,16 @@ footer a {
     color: var(--color-text);
 }
 
-.main-content {
+main section article {
     max-width: 95%;
 }
 
-.main-content h3 {
+main section article h3 {
     font-size: 1.3em;
     margin: 10px 0 30px 0;
 }
 
-.main-content p {
+main section article p {
     font-size: 1.1em;
     margin: 10px 0 30px 0;
 }
@@ -166,7 +166,7 @@ footer a {
         padding-bottom: 5%;
     }
 
-    #switchContainer {
+    header ul {
         display: flex;
         align-items: center;
         user-select: none;
@@ -174,7 +174,7 @@ footer a {
         margin-bottom: 10%;
     }
 
-    #switchContainer li button {
+    header ul li button {
         background-color: white;
         border: black solid 1px;
     }
@@ -283,11 +283,11 @@ footer a {
         padding-bottom: 5%;
     }
 
-    .footerList li {
+    footer ul li {
         padding: 10px 10px 10px 0;
     }
 
-    #switchContainer {
+    header ul {
         display: flex;
         align-items: center;
         user-select: none;
