@@ -115,7 +115,7 @@ main section article p {
 }
 
 /* Small screens */
-@media (max-width: 375px) {
+@media (max-width: 414px) {
     h1 {
         font-size: 1.6em;
     }
@@ -226,7 +226,7 @@ main section article p {
 }
 
 /* Big screens */
-@media (min-width: 376px) {
+@media (min-width: 415px) {
     header {
         display: flex;
         align-items: center;
