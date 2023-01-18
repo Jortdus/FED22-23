@@ -86,51 +86,21 @@ Automatisch dark mode via chrome extension werkt erg goed.
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina:
+### Home pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="readme-images/home.png" width="375px" alt="Archimedes hoofdpagina">
 
-### dynamisch deel (bijv menu):
+## Huisartsen pagina
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="readme-images/huisarts.png" width="375px" alt="Archimedes Huisartsen pagina">
 
-### wellicht nog een dynamisch deel (bijv filter):
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
 ## Voortgang 1 (week 2)
 
-<details>
-  <summary>uitwerken voor 1e voortgang</summary>
-
-### Stand van zaken
-
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-### Agenda voor meeting
-
-samen met je groepje opstellen
-
-| idelene        | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| vraag over dit | en dit             | en ik dit    | en dan ik dat    |
-| en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
--   punt 1
--   punt 2
--   nog een punt
--   ...
-
-</details>
+### In verband met ziekte niet gedaan.
 
 ## Voortgang 2 (week 3)
 
@@ -139,26 +109,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-### Agenda voor meeting
-
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
--   punt 1
--   punt 2
--   nog een punt
--   ...
+Website besproken met Sanne. 
+Hierbij gekeken hoe ik vooral focus kan leggen op toegankelijkheid en hoe ik dit kan testen tegenover officiele organisaties. 
 
 </details>
 
@@ -201,29 +153,11 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldi
 
 <details>
   <summary>uitwerken voor 3e voortgang</summary>
+  Tijdens het 3e voortgangsgesprek heb ik met Jeffrey gezeten en gekeken naar  mijn huidige website. Hier kwam al snel naar boven dat ik niet goed had begrepen dat classes en id's niet toegestaan waren en dat mijn HTML niet altijd semantisch correct was.
+  <br/>
+  Daarnaast liep ik achter bij een paar documentatie punten die nog moesten worden aangevuld.
+  <br/>
 
-### Stand van zaken
-
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-### Agenda voor meeting
-
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
--   punt 1
--   punt 2
--   nog een punt
--   ...
 
 </details>
 
