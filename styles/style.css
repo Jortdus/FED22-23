@@ -23,6 +23,9 @@
     --color-currentnavtext: #80c1c9;
     --button-radius: 0.3em;
     --image-visibility: block;
+    --button-bgcolor: #fff;
+    --button-color: #1d575e;
+    --button-border: border:1px solid #1d575e;
 }
 
 :root[data-color-mode="dark-mode"] {
@@ -35,6 +38,9 @@
     --color-currentnavtext: #fff;
     --button-radius: 0.3em;
     --image-visibility: block;
+    --button-bgcolor: #fff;
+    --button-color: #1d575e;
+    --button-border: none;
 }
 
 :root[data-color-mode="contrast-mode"] {
@@ -49,6 +55,9 @@
     --button-radius: 0;
     --color-cardbg: #fff;
     --image-visibility: none;
+    --button-bgcolor: #000000;
+    --button-color: #000000;
+    --button-border: none;
 }
 
 .aria-invisible {
@@ -81,11 +90,11 @@ header img {
     filter: var(--filter-white);
 }
 
-header ul li button { 
+/* header ul li button { 
     background-color: white; 
     color: var(--color-main); 
     border: 2px solid var(--color-main);
-}
+} */
 
 li {
     list-style: none;
@@ -174,10 +183,11 @@ main section article p {
         margin-bottom: 10%;
     }
 
-    header ul li button {
-        background-color: white;
-        border: black solid 0.08em;
-    }
+    /* header ul li button {
+        background-color: var(--button-bgcolor);
+        border: var(--button-border);
+        color: var(--button-color);
+    } */
 
     li button {
         padding: 0.4em;
