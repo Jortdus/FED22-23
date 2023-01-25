@@ -81,6 +81,12 @@ header img {
     filter: var(--filter-white);
 }
 
+header ul li button { 
+    background-color: white; 
+    color: var(--color-main); 
+    border: 2px solid var(--color-main);
+}
+
 li {
     list-style: none;
 }
@@ -298,7 +304,7 @@ main section article p {
     }
 
     main section ul li {
-        width: 40%;
+        width: 35%;
         margin-bottom: 10%;
         background-color: var(--color-cardbg);
     }
