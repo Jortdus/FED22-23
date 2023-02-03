@@ -9,7 +9,7 @@ let contrastButtonElement = document.querySelector("header ul li:nth-of-type(3) 
 console.log(window.localStorage.getItem('themeColor'))
 document.documentElement.dataset.colorMode = window.localStorage.getItem('themeColor')
 
-if(localStorage.getItem('themeColor')) {
+if (localStorage.getItem('themeColor')) {
     if (localStorage.getItem('themeColor') == '') {
         lightButtonElement.style.cssText = "background-color: #1d575e; color:white; border:none;"
     } else if (localStorage.getItem('themeColor') == 'dark-mode') {
@@ -45,10 +45,9 @@ contrastButton.addEventListener('click', function handleClick() {
     window.localStorage.setItem('themeColor', "contrast-mode");
     document.documentElement.dataset.colorMode = "contrast-mode";
     console.log(window.localStorage.getItem('themeColor'))
-    
+
     // Styling
     lightButtonElement.style.cssText = "background-color: white; color: black; border:none;"
     darkButtonElement.style.cssText = "background-color: white; color: black; border:none;"
     contrastButtonElement.style.cssText = "background-color: black; color:white; border:1px solid #f3db05;"
 });
-

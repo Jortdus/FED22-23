@@ -123,7 +123,7 @@ main section article p {
     margin: 0.8em 0 2em 0;
 }
 
-#current {
+a[aria-current="true"] {
     background-color: var(--color-background);
     border: 0.1em solid var(--color-currentnav);
     color: var(--color-currentnavtext);
