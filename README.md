@@ -164,34 +164,31 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldi
 ## Eindgesprek (week 5)
 
 <details>
-  <summary>uitwerken voor eindgesprek</summary>
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/home-light.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/home-dark.png" width="375px" alt="uitomst opdracht 1">
 
 ### Dit ging goed/Heb ik geleerd:
 
-Korte omschrijving met plaatjes
+Ik heb me de afgelopen bezig gehouden met toegankelijkheid de website. Denk hierbij aan gebruikers die slecht kunnen zien of blind zijn en daarbij een screenreader gebruiken. Hierbij heb ik onder andere gebruikt gemaakt van ARIA.
+<br/>
+<br/>
+ARIA (Accessible Rich Internet Applications) is een set van attributen die kunnen worden toegevoegd aan HTML-elementen om de toegankelijkheid van een website te verbeteren. Het helpt bijvoorbeeld screenreaders om de inhoud en de interactiviteit van de pagina beter te begrijpen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/home-highcontrast.png" width="375px">
 
 ### Dit was lastig/Is niet gelukt:
 
-Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+Ik had waarschijnlijk iets meer moeite in dit project mogen stoppen, echter ben ik uiteindelijk wel tevreden met het resultaat. 
 </details>
 
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 
 </details>
