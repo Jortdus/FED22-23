@@ -95,7 +95,6 @@ Automatisch dark mode via chrome extension werkt erg goed.
 
 <img src="readme-images/huisarts.png" width="375px" alt="Archimedes Huisartsen pagina">
 
-
 </details>
 
 ## Voortgang 1 (week 2)
@@ -109,43 +108,37 @@ Automatisch dark mode via chrome extension werkt erg goed.
 
 ### Stand van zaken
 
-Website besproken met Sanne. 
-Hierbij gekeken hoe ik vooral focus kan leggen op toegankelijkheid en hoe ik dit kan testen tegenover officiele organisaties. 
+Website besproken met Sanne.
+Hierbij gekeken hoe ik vooral focus kan leggen op toegankelijkheid en hoe ik dit kan testen tegenover officiele organisaties.
 
 </details>
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 8e werkgroep</summary>
-
-### Bevindingen
-
-Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 #### Screenreader
 
-Hier korte omschrijving (met indien nodig afbeeldingen)
+The old HTML code was not semantic and made using the screenreader uncomfortable.
+<br/>
+Empty elements did not provide any information to the screenreader which made it unclear for the user.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-#### Muis en Toetsenbord
-
-Hier korte omschrijving (met indien nodig afbeeldingen)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-#### Motoriek (shocks, elastiekjes)
-
-Hier korte omschrijving (met indien nodig afbeeldingen)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+<br/>
+<br/>
+The way to fix this is by using ARIA and semantically correct HTML. Providing screenreaders with plenty of information and attribute values.
+<br/>
+<img src="readme-images/semantic-html.png" width="375px" alt="Example of semantic correct HTML">
 
 #### Visueel (brillen, contrast, kleurenblind, dark/light).
 
-Hier korte omschrijving (met indien nodig afbeeldingen)
+Website was bright and didn't have the best contrast on some elements. In addition the website did not have a dark mode or contrast mode.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+<br/>
+<br/>
+To fix this and make the website accesible I added a dark mode and contrast mode which are saved into the local storage.
+
+<br/>
+<img src="readme-images/home-highcontrast.png" width="375px" alt="High contrast home page">
 
 </details>
 
@@ -157,7 +150,6 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldi
   <br/>
   Daarnaast liep ik achter bij een paar documentatie punten die nog moesten worden aangevuld.
   <br/>
-
 
 </details>
 
@@ -176,13 +168,14 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldi
 Ik heb me de afgelopen bezig gehouden met toegankelijkheid de website. Denk hierbij aan gebruikers die slecht kunnen zien of blind zijn en daarbij een screenreader gebruiken. Hierbij heb ik onder andere gebruikt gemaakt van ARIA.
 <br/>
 <br/>
-ARIA (Accessible Rich Internet Applications) is een set van attributen die kunnen worden toegevoegd aan HTML-elementen om de toegankelijkheid van een website te verbeteren. Het helpt bijvoorbeeld screenreaders om de inhoud en de interactiviteit van de pagina beter te begrijpen. 
+ARIA (Accessible Rich Internet Applications) is een set van attributen die kunnen worden toegevoegd aan HTML-elementen om de toegankelijkheid van een website te verbeteren. Het helpt bijvoorbeeld screenreaders om de inhoud en de interactiviteit van de pagina beter te begrijpen.
 
   <img src="readme-images/home-highcontrast.png" width="375px">
 
 ### Dit was lastig/Is niet gelukt:
 
-Ik had waarschijnlijk iets meer moeite in dit project mogen stoppen, echter ben ik uiteindelijk wel tevreden met het resultaat. 
+Ik had waarschijnlijk iets meer moeite in dit project mogen stoppen, echter ben ik uiteindelijk wel tevreden met het resultaat.
+
 </details>
 
 ## Bronnenlijst
